@@ -15,6 +15,6 @@ jobs:
         files: 
 
 
-    - name: typos-action
-      uses: crate-ci/typos@v1.0.4
+    # - name: typos-action
+    #   uses: crate-ci/typos@v1.0.4
 
