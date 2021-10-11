@@ -1,12 +1,20 @@
-name: Spelling
+name: Test GitHub Action
 on: [pull_request]
 
 jobs:
-  spelling:
+  run:
     name: Spell Check with Typos
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Actions Repository
       uses: actions/checkout@v2
-    - name: Spell Check Repo
+
+    - name: Check spelling of Repository
       uses: crate-ci/typos@master
+      with: 
+        files: 
+
+
+    - name: typos-action
+      uses: crate-ci/typos@v1.0.4
+
