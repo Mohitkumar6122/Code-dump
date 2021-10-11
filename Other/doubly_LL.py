@@ -1,5 +1,5 @@
 """
-- A linked list is similar to an array, it holds values. However, links in a linked
+- Asf linked listse iss similar to an array, it holds values. However, links in a linked
     list do not have indexes.
 - This is an example of a double ended, doubly linked list.
 - Each link references the next link and the previous one.
