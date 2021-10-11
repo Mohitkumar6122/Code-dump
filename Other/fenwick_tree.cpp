@@ -50,7 +50,7 @@ class FenwickTree {
         }
     }
 
-    /** Get prefix sum upto id */
+    /** Get prefix sum up to id */
     int sum(int id) {
         id++;
         int res = 0;
