@@ -134,7 +134,7 @@ int main()
 	for(int i = 0; i < n; i++){
 		std::cin >> a[i];
 	}
-	std::cout << "Median: ";			// Median defination: https://en.wikipedia.org/wiki/Median
+	std::cout << "Median: ";			// Median definition: https://en.wikipedia.org/wiki/Median
 	int x = search::median_search::median_of_medians(a,  (n - 1) / 2);
 	if(n % 2 == 0){
 		int y = search::median_search::median_of_medians(a, n / 2);
