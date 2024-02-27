@@ -105,3 +105,4 @@ int main () {
     }
     return 0;
 }
+// https://stackoverflow.com/questions/11693226/prevent-caching-when-pressing-back-buttons
