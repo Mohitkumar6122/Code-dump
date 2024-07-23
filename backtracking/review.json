@@ -1,0 +1,1282 @@
+{
+  "url": {
+    "base_path": "",
+    "host_name": "",
+    "query_params": {
+      "ekey": "#proposal.ekey"
+    }
+  },
+  "actions": {
+    "on_load": [
+      {
+        "args": {
+          "data": {
+            "is_new": "false",
+            "origin": "acko",
+            "product": "car"
+          },
+          "journey": "fresh_car"
+        },
+        "type": "on_load"
+      }
+    ]
+  },
+  "children": [
+    {
+      "id": "review_page_header",
+      "data": {
+        "props": {
+          "label": "review_header",
+          "imgSrc": "",
+          "is_visible": true,
+          "back_button": true
+        },
+        "column": 1
+      },
+      "type": "header"
+    },
+    {
+      "id": "review_two_column_layout",
+      "data": {
+        "props": {
+          "is_visible": true
+        },
+        "column": 2
+      },
+      "type": "flex_container",
+      "children": [
+        {
+          "id": "review_left_nav",
+          "data": {
+            "props": {
+              "steps": [
+                {
+                  "name": "Car details",
+                  "status": "progress"
+                },
+                {
+                  "name": "Personal details",
+                  "status": "progress"
+                },
+                {
+                  "name": "Plan selection",
+                  "status": "progress"
+                },
+                {
+                  "name": "Review",
+                  "status": "pending"
+                }
+              ],
+              "style": {
+                "background": null
+              },
+              "is_visible": true
+            },
+            "column": 1
+          },
+          "type": "left_navigation"
+        },
+        {
+          "id": "review_data",
+          "data": {
+            "props": {
+              "style": {},
+              "is_visible": true
+            },
+            "column": 2
+          },
+          "type": "layout",
+          "children": [
+            {
+              "id": "review_page_heading",
+              "data": {
+                "row": 1,
+                "props": {
+                  "text": "Take a moment to review your policy details",
+                  "style": {},
+                  "is_visible": true
+                }
+              },
+              "type": "page_heading"
+            },
+            {
+              "id": "vehicle_details_card",
+              "data": {
+                "row": 1,
+                "props": {
+                  "text": "Take a moment to review your policy details",
+                  "style": {},
+                  "is_visible": true,
+                  "minifiedDetails": [
+                    {
+                      "value": "HP38G4042",
+                      "type": "text",
+                      "styles": {
+                        "fontWeight": 500
+                      }
+                    },
+                    {
+                      "type": "bulletMinifiedDetails",
+                      "value": [
+                        {
+                          "value": "Maruti Swift Dzire",
+                          "type": "text",
+                          "styles": {
+                            "fontWeight": 400
+                          }
+                        },
+                        {
+                          "value": "Petrol",
+                          "type": "text",
+                          "styles": {
+                            "fontWeight": 400
+                          }
+                        },
+                        {
+                          "value": "2010",
+                          "type": "text",
+                          "styles": {
+                            "fontWeight": 400
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "cardTitle": "Car and owner details",
+                  "allowEdit": true,
+                  "expandableLinkText": "See More",
+                  "minifiedLinkText": "See Less",
+                  "showDetails": false,
+                  "editDetailsText": "Edit details",
+                  "editDetailsIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-common/edit.svg",
+                  "headingIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/car.svg",
+                  "vehicleData": [
+                    {
+                      "field": "Car number",
+                      "value": "KA08TY6601"
+                    },
+                    {
+                      "field": "Type",
+                      "value": "Private"
+                    },
+                    {
+                      "field": "Make & model",
+                      "value": "Mahindra XUV 700"
+                    },
+                    {
+                      "field": "Variant",
+                      "value": "2.0 AX7"
+                    },
+                    {
+                      "field": "Fuel type",
+                      "value": "Petrol"
+                    },
+                    {
+                      "field": "Make year",
+                      "value": "2018"
+                    }
+                  ],
+                  "ownerData": [
+                    {
+                      "field": "Policy holder",
+                      "value": "Dhruv",
+                      "fullWidth": true
+                    },
+                    {
+                      "field": "E-mail",
+                      "value": "test@gmail.com",
+                      "fullWidth": true
+                    },
+                    {
+                      "field": "Phone number",
+                      "value": "9991145453"
+                    },
+                    {
+                      "field": "Pincode",
+                      "value": "560100"
+                    },
+                    {
+                      "field": "GST number",
+                      "value": ""
+                    },
+                    {
+                      "field": "CNG kit installed?",
+                      "value": "No"
+                    },
+                    {
+                      "field": "Nominee",
+                      "value": "Mkay"
+                    }
+                  ]
+                }
+              },
+              "type": "vehicle_details"
+            },
+            {
+              "id": "coverage_details",
+              "data": {
+                "row": 1,
+                "props": {
+                  "text": "Take a moment to review your policy details",
+                  "style": {},
+                  "is_visible": true,
+                  "allowEdit": true,
+                  "minifiedDetails": [
+                    {
+                      "value": "Comprehensive plan (₹8.5 lakh IDV) with Zero depreciation and engine cover",
+                      "plan_name": "Comprehensive plan",
+                      "IDV": "850000",
+                      "addons": [
+                        {
+                          "id": "pa_owner_two_wheeler",
+                          "variant_id": null,
+                          "variant_priority": null,
+                          "name": null,
+                          "description": "Mandatory by law. ₹15 Lakhs coverage against accidental injury or death.",
+                          "description_v1": "This add-on covers accidental injury or death of the bike owner {bold}(sum insured up to ₹15 Lakhs){/bold}.",
+                          "display_name_v1": "Personal Accident Cover",
+                          "display_name_v2": "Personal Accident cover",
+                          "description_v2": null,
+                          "sub_heading": "Mandatory by law",
+                          "display_name": "Personal Accident Cover",
+                          "image": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/plan/PA-Cover-New.svg",
+                          "price": {
+                            "net_premium": 1050,
+                            "gross_premium": 1239,
+                            "old_net_premium": null,
+                            "old_gross_premium": null,
+                            "gst": {
+                              "cgst": null,
+                              "sgst": null,
+                              "utgst": null,
+                              "igst": null,
+                              "gst": 189
+                            },
+                            "gst_percentage": null,
+                            "net_strike_through_premium": null,
+                            "price_discount": {
+                              "ncb_discount": null,
+                              "od_effective_coupon_discount": null,
+                              "renewal_effective_coupon_discount": null
+                            }
+                          },
+                          "sum_assured_value": 1500000,
+                          "secondary_sum_assured_value": 1500000,
+                          "assured_accessories": [],
+                          "is_selected": true,
+                          "is_accessory": false,
+                          "discounts_applied": null,
+                          "priority": 0,
+                          "tenure": 3,
+                          "addon_variant_responses": null
+                        },
+                        {
+                          "id": "pa_pillion_two_wheeler",
+                          "variant_id": null,
+                          "variant_priority": null,
+                          "name": null,
+                          "description": "Provides coverage of {bold}₹ 2 Lakh{/bold} for an individual sitting behind your bike against accidental death or permanent disability.",
+                          "description_v1": "Provides coverage of {bold}₹ 2 Lakh{/bold} for an individual sitting behind your bike against accidental death or permanent disability.",
+                          "display_name_v1": "Pillion Rider Cover",
+                          "display_name_v2": "Pillion Rider Cover",
+                          "description_v2": "Provides coverage of {bold}₹ 2 Lakh{/bold} for an individual sitting behind your bike against accidental death or permanent disability.",
+                          "sub_heading": "",
+                          "display_name": "Pillion Rider Cover",
+                          "image": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/plan/pillion-rider-bike.svg",
+                          "price": {
+                            "net_premium": 300,
+                            "gross_premium": 354,
+                            "old_net_premium": null,
+                            "old_gross_premium": null,
+                            "gst": {
+                              "cgst": null,
+                              "sgst": null,
+                              "utgst": null,
+                              "igst": null,
+                              "gst": 54
+                            },
+                            "gst_percentage": null,
+                            "net_strike_through_premium": null,
+                            "price_discount": {
+                              "ncb_discount": null,
+                              "od_effective_coupon_discount": null,
+                              "renewal_effective_coupon_discount": null
+                            }
+                          },
+                          "sum_assured_value": 200000,
+                          "secondary_sum_assured_value": 200000,
+                          "assured_accessories": [],
+                          "is_selected": true,
+                          "is_accessory": false,
+                          "discounts_applied": null,
+                          "priority": 0,
+                          "tenure": 3,
+                          "addon_variant_responses": null
+                        },
+                        {
+                          "id": "consumables_two_wheeler",
+                          "variant_id": null,
+                          "variant_priority": null,
+                          "name": null,
+                          "description": "Your standard plan doesn't cover the cost for nuts, brake oil, engine oil etc. used during bike repairs. This add-on helps cover these expenses during claims.",
+                          "description_v1": "Your standard plan doesn't cover the cost for nuts, brake oil, engine oil etc. used during bike repairs. This add-on helps cover these expenses during claims.",
+                          "display_name_v1": "Consumables Cover",
+                          "display_name_v2": "Consumables Cover",
+                          "description_v2": "Your standard plan doesn't cover the cost for nuts, brake oil, engine oil etc. used during bike repairs. This add-on helps cover these expenses during claims.",
+                          "sub_heading": "",
+                          "display_name": "Consumables Cover",
+                          "image": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/plan/consumables-bike.svg",
+                          "price": {
+                            "net_premium": 178,
+                            "gross_premium": 210,
+                            "old_net_premium": null,
+                            "old_gross_premium": null,
+                            "gst": {
+                              "cgst": null,
+                              "sgst": null,
+                              "utgst": null,
+                              "igst": null,
+                              "gst": 32
+                            },
+                            "gst_percentage": null,
+                            "net_strike_through_premium": null,
+                            "price_discount": {
+                              "ncb_discount": null,
+                              "od_effective_coupon_discount": null,
+                              "renewal_effective_coupon_discount": null
+                            }
+                          },
+                          "sum_assured_value": 0,
+                          "secondary_sum_assured_value": 0,
+                          "assured_accessories": [],
+                          "is_selected": true,
+                          "is_accessory": false,
+                          "discounts_applied": null,
+                          "priority": 0,
+                          "tenure": 3,
+                          "addon_variant_responses": null
+                        },
+                        {
+                          "id": "helmet_protect_two_wheeler",
+                          "variant_id": null,
+                          "variant_priority": null,
+                          "name": null,
+                          "description": "Get {bold}₹ 1000 coverage{/bold} for your helmet against damage or theft, applicable only when your bike is also involved in the same incident.",
+                          "description_v1": "Get {bold}₹ 1000 coverage{/bold} for your helmet against damage or theft, applicable only when your bike is also involved in the same incident.",
+                          "display_name_v1": "Helmet Protect",
+                          "display_name_v2": "Helmet Protect",
+                          "description_v2": "Get {bold}₹ 1000 coverage{/bold} for your helmet against damage or theft, applicable only when your bike is also involved in the same incident.",
+                          "sub_heading": "",
+                          "display_name": "Helmet Protect",
+                          "image": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/plan/helmet-protect.svg",
+                          "price": {
+                            "net_premium": 150,
+                            "gross_premium": 177,
+                            "old_net_premium": null,
+                            "old_gross_premium": null,
+                            "gst": {
+                              "cgst": null,
+                              "sgst": null,
+                              "utgst": null,
+                              "igst": null,
+                              "gst": 27
+                            },
+                            "gst_percentage": null,
+                            "net_strike_through_premium": null,
+                            "price_discount": {
+                              "ncb_discount": null,
+                              "od_effective_coupon_discount": null,
+                              "renewal_effective_coupon_discount": null
+                            }
+                          },
+                          "sum_assured_value": 0,
+                          "secondary_sum_assured_value": 0,
+                          "assured_accessories": [],
+                          "is_selected": true,
+                          "is_accessory": false,
+                          "discounts_applied": null,
+                          "priority": 0,
+                          "tenure": 3,
+                          "addon_variant_responses": null
+                        }
+                      ],
+                      "type": "coverage_details",
+                      "styles": {
+                        "fontWeight": 400,
+                        "color": "#040222"
+                      }
+                    }
+                  ],
+                  "expandableDetails": [
+                    {
+                      "type": "flexColDetails",
+                      "value": [
+                        {
+                          "key": "Insured Declared Value (IDV)",
+                          "value": "₹8,50,000",
+                          "type": "text",
+                          "keyStyles": {
+                            "fontWeight": "400"
+                          }
+                        },
+                        {
+                          "key": "Selected plan",
+                          "type": "listitem",
+                          "value": [
+                            "Comprehensive"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "flexColDetails",
+                      "value": [
+                        {
+                          "key": "Additional coverage",
+                          "type": "addonlistitem",
+                          "value": [
+                            {
+                              "id": "pa_owner_two_wheeler",
+                              "variant_id": null,
+                              "variant_priority": null,
+                              "name": null,
+                              "description": "Mandatory by law. ₹15 Lakhs coverage against accidental injury or death.",
+                              "description_v1": "This add-on covers accidental injury or death of the bike owner {bold}(sum insured up to ₹15 Lakhs){/bold}.",
+                              "display_name_v1": "Personal Accident Cover",
+                              "display_name_v2": "Personal Accident cover",
+                              "description_v2": null,
+                              "sub_heading": "Mandatory by law",
+                              "display_name": "Personal Accident Cover",
+                              "image": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/plan/PA-Cover-New.svg",
+                              "price": {
+                                "net_premium": 1050,
+                                "gross_premium": 1239,
+                                "old_net_premium": null,
+                                "old_gross_premium": null,
+                                "gst": {
+                                  "cgst": null,
+                                  "sgst": null,
+                                  "utgst": null,
+                                  "igst": null,
+                                  "gst": 189
+                                },
+                                "gst_percentage": null,
+                                "net_strike_through_premium": null,
+                                "price_discount": {
+                                  "ncb_discount": null,
+                                  "od_effective_coupon_discount": null,
+                                  "renewal_effective_coupon_discount": null
+                                }
+                              },
+                              "sum_assured_value": 1500000,
+                              "secondary_sum_assured_value": 1500000,
+                              "assured_accessories": [],
+                              "is_selected": true,
+                              "is_accessory": false,
+                              "discounts_applied": null,
+                              "priority": 0,
+                              "tenure": 3,
+                              "addon_variant_responses": null
+                            },
+                            {
+                              "id": "pa_pillion_two_wheeler",
+                              "variant_id": null,
+                              "variant_priority": null,
+                              "name": null,
+                              "description": "Provides coverage of {bold}₹ 2 Lakh{/bold} for an individual sitting behind your bike against accidental death or permanent disability.",
+                              "description_v1": "Provides coverage of {bold}₹ 2 Lakh{/bold} for an individual sitting behind your bike against accidental death or permanent disability.",
+                              "display_name_v1": "Pillion Rider Cover",
+                              "display_name_v2": "Pillion Rider Cover",
+                              "description_v2": "Provides coverage of {bold}₹ 2 Lakh{/bold} for an individual sitting behind your bike against accidental death or permanent disability.",
+                              "sub_heading": "",
+                              "display_name": "Pillion Rider Cover",
+                              "image": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/plan/pillion-rider-bike.svg",
+                              "price": {
+                                "net_premium": 300,
+                                "gross_premium": 354,
+                                "old_net_premium": null,
+                                "old_gross_premium": null,
+                                "gst": {
+                                  "cgst": null,
+                                  "sgst": null,
+                                  "utgst": null,
+                                  "igst": null,
+                                  "gst": 54
+                                },
+                                "gst_percentage": null,
+                                "net_strike_through_premium": null,
+                                "price_discount": {
+                                  "ncb_discount": null,
+                                  "od_effective_coupon_discount": null,
+                                  "renewal_effective_coupon_discount": null
+                                }
+                              },
+                              "sum_assured_value": 200000,
+                              "secondary_sum_assured_value": 200000,
+                              "assured_accessories": [],
+                              "is_selected": true,
+                              "is_accessory": false,
+                              "discounts_applied": null,
+                              "priority": 0,
+                              "tenure": 3,
+                              "addon_variant_responses": null
+                            },
+                            {
+                              "id": "consumables_two_wheeler",
+                              "variant_id": null,
+                              "variant_priority": null,
+                              "name": null,
+                              "description": "Your standard plan doesn't cover the cost for nuts, brake oil, engine oil etc. used during bike repairs. This add-on helps cover these expenses during claims.",
+                              "description_v1": "Your standard plan doesn't cover the cost for nuts, brake oil, engine oil etc. used during bike repairs. This add-on helps cover these expenses during claims.",
+                              "display_name_v1": "Consumables Cover",
+                              "display_name_v2": "Consumables Cover",
+                              "description_v2": "Your standard plan doesn't cover the cost for nuts, brake oil, engine oil etc. used during bike repairs. This add-on helps cover these expenses during claims.",
+                              "sub_heading": "",
+                              "display_name": "Consumables Cover",
+                              "image": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/plan/consumables-bike.svg",
+                              "price": {
+                                "net_premium": 178,
+                                "gross_premium": 210,
+                                "old_net_premium": null,
+                                "old_gross_premium": null,
+                                "gst": {
+                                  "cgst": null,
+                                  "sgst": null,
+                                  "utgst": null,
+                                  "igst": null,
+                                  "gst": 32
+                                },
+                                "gst_percentage": null,
+                                "net_strike_through_premium": null,
+                                "price_discount": {
+                                  "ncb_discount": null,
+                                  "od_effective_coupon_discount": null,
+                                  "renewal_effective_coupon_discount": null
+                                }
+                              },
+                              "sum_assured_value": 0,
+                              "secondary_sum_assured_value": 0,
+                              "assured_accessories": [],
+                              "is_selected": true,
+                              "is_accessory": false,
+                              "discounts_applied": null,
+                              "priority": 0,
+                              "tenure": 3,
+                              "addon_variant_responses": null
+                            },
+                            {
+                              "id": "helmet_protect_two_wheeler",
+                              "variant_id": null,
+                              "variant_priority": null,
+                              "name": null,
+                              "description": "Get {bold}₹ 1000 coverage{/bold} for your helmet against damage or theft, applicable only when your bike is also involved in the same incident.",
+                              "description_v1": "Get {bold}₹ 1000 coverage{/bold} for your helmet against damage or theft, applicable only when your bike is also involved in the same incident.",
+                              "display_name_v1": "Helmet Protect",
+                              "display_name_v2": "Helmet Protect",
+                              "description_v2": "Get {bold}₹ 1000 coverage{/bold} for your helmet against damage or theft, applicable only when your bike is also involved in the same incident.",
+                              "sub_heading": "",
+                              "display_name": "Helmet Protect",
+                              "image": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/plan/helmet-protect.svg",
+                              "price": {
+                                "net_premium": 150,
+                                "gross_premium": 177,
+                                "old_net_premium": null,
+                                "old_gross_premium": null,
+                                "gst": {
+                                  "cgst": null,
+                                  "sgst": null,
+                                  "utgst": null,
+                                  "igst": null,
+                                  "gst": 27
+                                },
+                                "gst_percentage": null,
+                                "net_strike_through_premium": null,
+                                "price_discount": {
+                                  "ncb_discount": null,
+                                  "od_effective_coupon_discount": null,
+                                  "renewal_effective_coupon_discount": null
+                                }
+                              },
+                              "sum_assured_value": 0,
+                              "secondary_sum_assured_value": 0,
+                              "assured_accessories": [],
+                              "is_selected": true,
+                              "is_accessory": false,
+                              "discounts_applied": null,
+                              "priority": 0,
+                              "tenure": 3,
+                              "addon_variant_responses": null
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "cardTitle": "Coverage Details",
+                  "showDetails": false,
+                  "expandableLinkText": "See More",
+                  "minifiedLinkText": "See Less",
+                  "editDetailsText": "Edit coverage",
+                  "editDetailsIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-common/edit.svg",
+                  "headingIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/passenger_cover.svg"
+                }
+              },
+              "type": "expandable_card"
+            },
+            {
+              "id": "policy_details",
+              "data": {
+                "row": 1,
+                "props": {
+                  "text": "Take a moment to review your policy details",
+                  "style": {},
+                  "is_visible": true,
+                  "allowEdit": false,
+                  "minifiedDetails": [
+                    {
+                      "value": "Starts on <b>24 May 2024</b> at 12AM",
+                      "type": "text",
+                      "styles": {
+                        "fontWeight": 400,
+                        "color": "#040222"
+                      }
+                    },
+                    {
+                      "value": "How inspection works ",
+                      "type": "hyperlink_text",
+                      "actions": {
+                        "on_click": [
+                          {
+                            "args": {
+                              "ids": "car_inspection_modal"
+                            },
+                            "type": "submit_call"
+                          }
+                        ]
+                      },
+                      "styles": {
+                        "fontWeight": 400,
+                        "color": "#040222"
+                      }
+                    }
+                  ],
+                  "cardTitle": "Policy start date",
+                  "showDetails": false,
+                  "expandableLinkText": "",
+                  "minifiedLinkText": "",
+                  "editDetailsText": "",
+                  "editDetailsIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/car.svg",
+                  "headingIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/calender.svg"
+                }
+              },
+              "type": "expandable_card"
+            },
+            {
+              "id": "coupon_modal",
+              "data": {
+                "row": 1,
+                "props": {
+                  "text": "Take a moment to review your policy details",
+                  "style": {},
+                  "is_visible": false,
+                  "allowEdit": false,
+                  "minifiedDetails": [
+                    {
+                      "type": "coupon_input",
+                      "placeholder": "Enter coupon code",
+                      "ctaText": "Apply",
+                      "appliedText": "WELCOME100 Applied!",
+                      "savedText": "You saved ₹1,000",
+                      "isApplied": false
+                    }
+                  ],
+                  "cardTitle": "Apply coupon",
+                  "showDetails": false,
+                  "expandableLinkText": "",
+                  "minifiedLinkText": "",
+                  "editDetailsText": "",
+                  "editDetailsIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/coupon.svg",
+                  "headingIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/coupon.svg"
+                }
+              },
+              "type": "expandable_card"
+            },
+            {
+              "id": "premium_section",
+              "data": {
+                "row": 1,
+                "props": {
+                  "text": "Take a moment to review your policy details",
+                  "style": {},
+                  "is_visible": true,
+                  "allowEdit": false,
+                  "minifiedDetails": [],
+                  "expandableDetails": [
+                    {
+                      "type": "premium_details",
+                      "heading": "Premium Details",
+                      "data": [
+                        {
+                          "key": "Third Party premium",
+                          "value": "₹ 7,897"
+                        },
+                        {
+                          "key": "Own Damage premium",
+                          "value": "₹ 11,727"
+                        },
+                        {
+                          "key": "NCB Discount",
+                          "isDiscount": true,
+                          "value": "₹ 2,907"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "premium_details",
+                      "heading": "Additional covers",
+                      "data": [
+                        {
+                          "key": "Engine protect",
+                          "value": "₹ 2,789"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "premium_details",
+                      "heading": "Discounts",
+                      "data": [
+                        {
+                          "key": "Coupon Discount",
+                          "isDiscount": true,
+                          "value": "₹ 100"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "premium_details",
+                      "data": [
+                        {
+                          "key": "Net premium",
+                          "value": "₹ 19,406"
+                        },
+                        {
+                          "key": "18% GST",
+                          "value": "₹ 3,493"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "GROSS_PREMIUM",
+                      "data": [
+                        {
+                          "key": "Total",
+                          "cueText": "(Including GST)",
+                          "value": "₹ 7,904"
+                        }
+                      ]
+                    }
+                  ],
+                  "showDetails": true,
+                  "cardTitle": "Premium break-up",
+                  "expandableLinkText": "",
+                  "minifiedLinkText": "",
+                  "editDetailsText": "",
+                  "editDetailsIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/car.svg",
+                  "headingIcon": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-common/money.svg"
+                }
+              },
+              "type": "expandable_card"
+            },
+            {
+              "id": "car_inspection_modal",
+              "data": {
+                "props": {
+                  "bodyStyles": {
+                    "display": "flex",
+                    "align-items": "center",
+                    "flex-direction": "column",
+                    "justify-content": "center"
+                  },
+                  "is_visible": false,
+                  "modalHeading": "",
+                  "hideCloseButton": false,
+                  "disableOverlayClose": true
+                },
+                "column": 2
+              },
+              "type": "bottomsheet",
+              "actions": {
+                "on_click": [
+                  {
+                    "args": {
+                      "reverseIds": "car_inspection_modal"
+                    },
+                    "type": "submit_call"
+                  }
+                ]
+              },
+              "children": [
+                {
+                  "id": "car_inspection_image",
+                  "data": {
+                    "row": 1,
+                    "props": {
+                      "alt": "car details",
+                      "width": 88,
+                      "height": 88,
+                      "imgSrc": "/images/icons/inspection-icon.svg",
+                      "is_visible": true
+                    }
+                  },
+                  "type": "image_container"
+                },
+                {
+                  "id": "inspection_layout_heading",
+                  "data": {
+                    "row": 2,
+                    "props": {
+                      "text": "How does car inspection work?",
+                      "type": "",
+                      "is_visible": true
+                    }
+                  },
+                  "type": "typography"
+                },
+                {
+                  "id": "covered_not_covered_addons_section",
+                  "data": {
+                    "row": 4,
+                    "props": {
+                      "options": [
+                        {
+                          "imgSrc": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/select_date_calendar.svg",
+                          "text": "You can pick from up to 10 slots in the next 3 days starting 8 AM to 9 PM"
+                        },
+                        {
+                          "imgSrc": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/car_survey.svg",
+                          "text": "Our team will inspect your car at your chosen location, and issue the policy within 24 hours if inspection is approved"
+                        }
+                      ],
+                      "is_visible": true
+                    }
+                  },
+                  "type": "inspection_items"
+                },
+                {
+                  "id": "inspection_banner",
+                  "data": {
+                    "row": 4,
+                    "props": {
+                      "text": "If we’re unable to insure your car after inspection, we will refund your payment instantly",
+                      "type": "DANGER",
+                      "image": {
+                        "alt": "warning-icon",
+                        "width": 24,
+                        "height": 24,
+                        "imgSrc": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-review/traingle_warning.svg",
+                        "is_visible": true
+                      },
+                      "styles": {
+                        "width": "100%"
+                      },
+                      "is_visible": true
+                    }
+                  },
+                  "type": "banner"
+                },
+                {
+                  "id": "inspection_bottomsheet_cta",
+                  "data": {
+                    "row": 4,
+                    "props": {
+                      "name": "",
+                      "label": "OK",
+                      "styles": {
+                        "margin-top": "32px"
+                      },
+                      "is_visible": true
+                    }
+                  },
+                  "type": "primary_button",
+                  "actions": {
+                    "on_click": [
+                      {
+                        "args": {
+                          "reverseIds": "car_inspection_modal"
+                        },
+                        "type": "submit_call"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "premium_increased_modal",
+              "data": {
+                "props": {
+                  "bodyStyles": {
+                    "display": "flex",
+                    "align-items": "center",
+                    "flex-direction": "column",
+                    "justify-content": "center"
+                  },
+                  "is_visible": false,
+                  "modalHeading": "",
+                  "hideCloseButton": false,
+                  "disableOverlayClose": true
+                },
+                "column": 2
+              },
+              "type": "bottomsheet",
+              "children": [
+                {
+                  "id": "car_inspection_image",
+                  "data": {
+                    "row": 1,
+                    "props": {
+                      "alt": "car details",
+                      "width": 88,
+                      "height": 88,
+                      "imgSrc": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-discount/coupon_offer.svg",
+                      "is_visible": false
+                    }
+                  },
+                  "type": "image_container"
+                },
+                {
+                  "id": "inspection_layout_heading",
+                  "data": {
+                    "row": 2,
+                    "props": {
+                      "text": "You qualify for a good driver discount!",
+                      "type": "",
+                      "is_visible": true
+                    }
+                  },
+                  "type": "typography"
+                },
+                {
+                  "id": "covered_not_covered_addons_section",
+                  "data": {
+                    "row": 4,
+                    "props": {
+                      "reduced_amount_text": "Your policy premium has reduced by {bold}₹240{/bold}",
+                      "options": [
+                        {
+                          "text": "Old premium",
+                          "value": 9499
+                        },
+                        {
+                          "text": "Updated premium",
+                          "value": 9259
+                        }
+                      ],
+                      "is_visible": true
+                    }
+                  },
+                  "type": "premium_reduction_banner"
+                },
+                {
+                  "id": "cng_confirmation_node_bottomsheet_cta",
+                  "data": {
+                    "row": 4,
+                    "props": {
+                      "name": "",
+                      "label": "OK",
+                      "styles": {
+                        "margin-top": "32px"
+                      },
+                      "is_visible": true
+                    }
+                  },
+                  "type": "primary_button",
+                  "actions": {
+                    "on_click": [
+                      {
+                        "args": {
+                          "required_fields": [
+                            "cng_confirmation_node_qna_1"
+                          ]
+                        },
+                        "type": "validateAndFetchConfigAndRedirect"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "premium_reduced_modal",
+              "data": {
+                "props": {
+                  "bodyStyles": {
+                    "display": "flex",
+                    "align-items": "center",
+                    "flex-direction": "column",
+                    "justify-content": "center"
+                  },
+                  "is_visible": false,
+                  "modalHeading": "",
+                  "hideCloseButton": false,
+                  "disableOverlayClose": true
+                },
+                "column": 2
+              },
+              "type": "bottomsheet",
+              "children": [
+                {
+                  "id": "car_inspection_image",
+                  "data": {
+                    "row": 1,
+                    "props": {
+                      "alt": "car details",
+                      "width": 88,
+                      "height": 88,
+                      "imgSrc": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-discount/coupon_offer.svg",
+                      "is_visible": true
+                    }
+                  },
+                  "type": "image_container"
+                },
+                {
+                  "id": "inspection_layout_heading",
+                  "data": {
+                    "row": 2,
+                    "props": {
+                      "text": "Your premium has increased",
+                      "type": "",
+                      "is_visible": true
+                    }
+                  },
+                  "type": "typography"
+                },
+                {
+                  "id": "inspection_layout_heading",
+                  "data": {
+                    "row": 2,
+                    "props": {
+                      "text": "Your policy premium has increased by <span style={color: rgb(216, 61, 55)}>₹320 </span>. Renew today to avoid any further increase in premium.",
+                      "type": "",
+                      "is_visible": true,
+                      "style": {
+                        "fontSize": "16px",
+                        "font-weight": "400",
+                        "line-height": "24px"
+                      }
+                    }
+                  },
+                  "type": "typography"
+                },
+                {
+                  "id": "cng_confirmation_node_bottomsheet_cta",
+                  "data": {
+                    "row": 4,
+                    "props": {
+                      "name": "",
+                      "label": "OK",
+                      "styles": {
+                        "margin-top": "32px"
+                      },
+                      "is_visible": true
+                    }
+                  },
+                  "type": "primary_button",
+                  "actions": {
+                    "on_click": [
+                      {
+                        "args": {
+                          "required_fields": [
+                            "cng_confirmation_node_qna_1"
+                          ]
+                        },
+                        "type": "validateAndFetchConfigAndRedirect"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "change_plan",
+                  "data": {
+                    "row": 4,
+                    "props": {
+                      "text": "Change plan",
+                      "type": "PRIMARY",
+                      "styles": {
+                        "margin": "1.4rem 0 0.5rem 0",
+                        "display": "flex",
+                        "justify-content": "center",
+                        "width": "100%"
+                      },
+                      "is_visible": true
+                    }
+                  },
+                  "type": "hyperlink_text",
+                  "actions": {
+                    "on_click": [
+                      {
+                        "args": {
+                          "ids": "${#id}_covered_not_covered_addons_modal"
+                        },
+                        "type": "submit_call"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "non_serviceable_modal",
+              "data": {
+                "props": {
+                  "bodyStyles": {
+                    "display": "flex",
+                    "align-items": "center",
+                    "flex-direction": "column",
+                    "justify-content": "center"
+                  },
+                  "is_visible": false,
+                  "modalHeading": "",
+                  "hideCloseButton": true,
+                  "disableOverlayClose": true
+                },
+                "column": 2
+              },
+              "type": "bottomsheet",
+              "children": [
+                {
+                  "id": "car_inspection_image",
+                  "data": {
+                    "row": 1,
+                    "props": {
+                      "alt": "car details",
+                      "width": 88,
+                      "height": 88,
+                      "imgSrc": "https://storefront-consumer-assets.s3.ap-south-1.amazonaws.com/static/sdui-discount/coupon_offer.svg",
+                      "is_visible": false
+                    }
+                  },
+                  "type": "image_container"
+                },
+                {
+                  "id": "inspection_layout_heading",
+                  "data": {
+                    "row": 2,
+                    "props": {
+                      "text": "Unfortunately, we are unable to cover you at this time",
+                      "type": "",
+                      "is_visible": true
+                    }
+                  },
+                  "type": "typography"
+                },
+                {
+                  "id": "inspection_layout_heading",
+                  "data": {
+                    "row": 2,
+                    "props": {
+                      "text": "We are working hard to expand our coverage and will let you know when we’re ready",
+                      "type": "",
+                      "is_visible": true,
+                      "style": {
+                        "fontSize": "16px",
+                        "font-weight": "400",
+                        "line-height": "24px",
+                        "color": "rgb(91, 86, 117)"
+                      }
+                    }
+                  },
+                  "type": "typography"
+                },
+                {
+                  "id": "cng_confirmation_node_bottomsheet_cta",
+                  "data": {
+                    "row": 4,
+                    "props": {
+                      "name": "",
+                      "label": "OK",
+                      "styles": {
+                        "margin-top": "32px"
+                      },
+                      "is_visible": true
+                    }
+                  },
+                  "type": "primary_button",
+                  "actions": {
+                    "on_click": [
+                      {
+                        "args": {
+                          "required_fields": [
+                            "cng_confirmation_node_qna_1"
+                          ]
+                        },
+                        "type": "validateAndFetchConfigAndRedirect"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page_footer",
+      "data": {
+        "props": {
+          "text": "By proceeding, you agree to our",
+          "label": "",
+          "style": {
+            "padding": "20px",
+            "maxWidth": "360px"
+          },
+          "is_visible": true,
+          "underlined_text": "Terms & Conditions"
+        },
+        "column": 3
+      },
+      "type": "footer",
+      "children": [
+        {
+          "id": "footer_cta",
+          "data": {
+            "props": {
+              "label": "Pay Now",
+              "styles": {
+                "background": "border: 1px solid var(__line_primary_n_200, #E7E7F0);",
+                "border_radius": "8px"
+              },
+              "is_visible": true
+            }
+          },
+          "type": "primary_button",
+          "actions": {
+            "on_click": [
+              {
+                "args": {
+                  "journey": "fresh_car",
+                  "required_fields": [
+                    "variant_container",
+                    "reg_year_container",
+                    "fuel_type_container",
+                    "enter_mmv_details_qna_2",
+                    "enter_mmv_details_qna_1",
+                    "select_make"
+                  ]
+                },
+                "type": "validateAndFetchConfigAndRedirect"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "meta_data": {
+    "link": "",
+    "page_title": "Quick Car & Two Wheeler Insurance Policy Online _ ACKO General Insurance Company",
+    "description": ""
+  },
+  "current_node": "review_node"
+}
